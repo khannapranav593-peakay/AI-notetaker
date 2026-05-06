@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "AI Notetaker",
+    "slug": "ai-notetaker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "AI Notetaker needs microphone access to record meetings."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0A84FF"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ainotetaker.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "AI Notetaker needs microphone access to record meetings.",
+        "UIBackgroundModes": ["audio", "fetch", "processing"]
+      }
+    },
+    "android": {
+      "package": "com.ainotetaker.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A84FF"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
+
