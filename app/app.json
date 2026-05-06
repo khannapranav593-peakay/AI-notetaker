@@ -25,14 +25,19 @@
           "icon": "./assets/icon.png",
           "color": "#0A84FF"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ainotetaker.app",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "AI Notetaker needs microphone access to record meetings.",
-        "UIBackgroundModes": ["audio", "fetch", "processing"]
+        "UIBackgroundModes": [
+          "audio",
+          "fetch",
+          "processing"
+        ]
       }
     },
     "android": {
@@ -45,7 +50,8 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.RECEIVE_BOOT_COMPLETED",
-        "android.permission.POST_NOTIFICATIONS"
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ]
     },
     "web": {
@@ -53,9 +59,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "your-eas-project-id"
+        "projectId": "33ce89f2-66db-4a33-9861-31f36ef39fed"
       }
-    }
+    },
+    "owner": "peakay96"
   }
 }
-
